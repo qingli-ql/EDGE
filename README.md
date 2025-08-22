@@ -1,6 +1,6 @@
 ﻿<div align="center">
 
-# EDGE: Enhanced Debiased Gradient Extraction for Robust Fine‑tuning
+# [CCL'25 oral]EDGE: Enhanced Debiased Gradient Extraction for Robust Fine‑tuning
 
 ![Example](figures/pipeline.png)
 
@@ -70,3 +70,4 @@ for grad, bias_grad in zip(erm_grads, gce_grads):
     # Final debiased gradient: subtract scaled bias component
     grad.grad = erm_grad - self.alpha * ext_grad
 ```
+
